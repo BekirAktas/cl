@@ -1,0 +1,4 @@
+Liverpool,92
+Manchester City,95
+Chelsea,86
+Arsenal,88
