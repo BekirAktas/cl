@@ -8,7 +8,7 @@ export default function Tournament({ teams = [], league = {} }) {
     const generateFixtures = async () => {
         setLoading(true);
         try {
-            const response = await axios.post(route('generateFixtures'));
+            const response = await axios.post('/api/generate-fixtures');
             if (response.data.success) {
                 router.visit('/fixtures');
             } else {
