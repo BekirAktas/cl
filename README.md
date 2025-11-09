@@ -2,14 +2,17 @@
 
 A professional Laravel + React.js football league simulation system with advanced match prediction algorithms and realistic team power-based gameplay.
 
+🔗 **Live Demo:** [https://cl-production-80ad.up.railway.app](https://cl-production-80ad.up.railway.app)  
+
 ## Features
 
 - **Round-Robin Tournament**: Automatic fixture generation with proper home/away rotation
 - **Power-Based Match Simulation**: Realistic match results using team strength, home advantage, and Poisson distribution
 - **Advanced Predictions**: Mathematical elimination checks and probability calculations for championship predictions
-- **Match Result Editing**: Inline editing for completed match scores with automatic standings recalculation
+- **Interactive Match Editing**: Click on any completed match score to edit results with inline editing interface
 - **Real-Time Standings**: Live league table with comprehensive statistics (P, W, D, L, GF, GA, GD, Pts)
 - **Season Management**: Play week by week or simulate entire season at once
+- **Predictions**: final 3 weeks with mathematical elimination detection
 
 ## Tech Stack
 
@@ -46,14 +49,13 @@ A professional Laravel + React.js football league simulation system with advance
 
 ## Usage
 
-1. **Load Teams**: Run the seeder to load teams with power ratings from `database/data/tournament_teams.txt`
-2. **Generate Fixtures**: Click "Generate Fixtures" to create the tournament schedule
-3. **Simulate Matches**: Use "Play Next Week" or "Play All Weeks" to run the simulation
-4. **Edit Results**: Click on any completed match score to edit it
-5. **View Predictions**: See championship probabilities based on current form and remaining fixtures
+1. **Generate Fixtures**: Click "Generate Fixtures" to create the round-robin tournament schedule
+2. **Simulate Matches**: Use "Play Next Week" for step-by-step simulation or "Play All Weeks" for full season
+3. **Edit Match Results**: After season completion, click on any match score to edit with inline editing interface
+4. **View Live Standings**: See real-time league table with automatic sorting and statistics
+5. **Championship Predictions**: Monitor probability percentages with advanced algorithms for final weeks
 
 ## Team Configuration
-
 Add teams in `database/data/tournament_teams.txt`:
 ```
 Liverpool,92
